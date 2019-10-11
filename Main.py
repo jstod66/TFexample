@@ -62,7 +62,7 @@ def main():
 	plt.yticks([])
 	plt.grid(False)
 	plt.imshow(test_images[Label_num,:,:], cmap=plt.cm.binary)
-	plt.xlabel(predictedLabels[Label_num])
+	plt.xlabel("Model Prediction: " + predictedLabels[Label_num] + "\n" + "Real Class: " + class_names[test_labels[Label_num]])
 	plt.show()
 
 def ExamplePlotLabels(images,labels,class_names):
